@@ -8,8 +8,8 @@ loop CMP R1,R2
      BEQ  endloop 
 	 CMP R1 ,R2
      ITE GT
-	 SUBGT R1,R1,R2
-	 SUBLE R2,R2,R1
+	 SUBGT R1,R1,R2 ; a > b 
+	 SUBLE R2,R2,R1 ; b > a
 	 B loop
 endloop	 
 
